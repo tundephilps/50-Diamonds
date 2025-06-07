@@ -9,53 +9,62 @@ import {
   FaShieldAlt,
   FaEdit,
 } from "react-icons/fa";
+import Term1 from "../assets/Term1.png";
+
+import Term2 from "../assets/Term2.png";
+import Term3 from "../assets/Term3.png";
+import Term4 from "../assets/Term4.png";
+import Term5 from "../assets/Term5.png";
+import Term6 from "../assets/Term6.png";
+import Term7 from "../assets/Term7.png";
+import Term8 from "../assets/Term8.png";
 
 export default function Terms() {
   const terms = [
     {
-      icon: <FaCheckCircle className="w-8 h-8 text-gray-700" />,
+      icon: <img src={Term1} />,
       title: "Acceptance of Terms",
       content:
         "Please read these terms carefully before using our website or services.",
     },
     {
-      icon: <FaCog className="w-8 h-8 text-gray-700" />,
+      icon: <img src={Term2} />,
       title: "Scope of Service",
       content:
-        "SOOzarmonic provides consulting services including strategy, branding, HR setup, and web presence for startups and SMEs.",
+        "50Diamonds provides consulting services including strategy, branding, HR setup, and web presence for startups and SMEs.",
     },
     {
-      icon: <FaCreditCard className="w-8 h-8 text-gray-700" />,
+      icon: <img src={Term3} />,
       title: "Payments & Refunds",
       content:
         "All payments must be made in full via our agreed payment plan before service commencement. Our service is 100% satisfaction guarantee but CAC filing payments are non-refundable.",
     },
     {
-      icon: <FaUser className="w-8 h-8 text-gray-700" />,
+      icon: <img src={Term4} />,
       title: "Client Responsibilities",
       content:
         "Clients must provide accurate, timely information to ensure smooth service delivery. Delays caused by incomplete information are not the responsibility of SOOzarmonic.",
     },
     {
-      icon: <FaClock className="w-8 h-8 text-gray-700" />,
+      icon: <img src={Term5} />,
       title: "Service Timelines",
       content:
         "Service timelines are estimates and may shift based on external factors (e.g., CAC delays, third-party dependencies). We'll keep you updated at every step.",
     },
     {
-      icon: <FaBrain className="w-8 h-8 text-gray-700" />,
+      icon: <img src={Term6} />,
       title: "Intellectual Property",
       content:
         "All creative logos and strategy documents created for clients are owned by the client after full payment. Clients cannot resell or showcase anonymized versions in our portfolio.",
     },
     {
-      icon: <FaShieldAlt className="w-8 h-8 text-gray-700" />,
+      icon: <img src={Term7} />,
       title: "Limitation of Liability",
       content:
         "We are not liable for business losses, profit declines, or legal issues resulting from client misuse of our materials or services.",
     },
     {
-      icon: <FaEdit className="w-8 h-8 text-gray-700" />,
+      icon: <img src={Term8} />,
       title: "Changes to Terms",
       content:
         "We may update these terms periodically. Users will be notified of major changes via email or on this website.",
@@ -89,7 +98,7 @@ export default function Terms() {
               className="border-4 rounded-lg p-6 hover:shadow-lg transition-shadow duration-300"
             >
               {/* Icon */}
-              <div className="mb-4">{term.icon}</div>
+              <div className="mb-2">{term.icon}</div>
 
               {/* Title */}
               <h3 className="text-lg font-bold text-black mb-3">
