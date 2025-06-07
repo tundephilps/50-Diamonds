@@ -5,6 +5,7 @@ import Footer from "./components/Layout/Footer";
 import ContactSection from "./Pages/ContactUs";
 import Pricing from "./Pages/Packages";
 import FAQPage from "./Pages/FAQ";
+import Terms from "./Pages/Terms";
 
 function App() {
   return (
@@ -19,6 +20,8 @@ function App() {
           <Route path="/Pricing" element={<Pricing />} />
 
           <Route path="/FAQ" element={<FAQPage />} />
+
+          <Route path="/Terms" element={<Terms />} />
         </Routes>
         <Footer />
       </Router>
