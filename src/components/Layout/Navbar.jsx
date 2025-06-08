@@ -6,6 +6,11 @@ import { Link } from "react-router-dom";
 const Navbar = () => {
   const [open, setOpen] = useState(false);
 
+  // Function to close the mobile menu
+  const closeMobileMenu = () => {
+    setOpen(false);
+  };
+
   return (
     <nav className="w-full bg-white shadow-sm fixed top-0 z-50">
       <div className="lg:px-12 mx-auto px-4 py-3 flex justify-between items-center">
@@ -54,16 +59,43 @@ const Navbar = () => {
 
       {/* Mobile Menu */}
       {open && (
-        <div className="md:hidden bg-white px-4 pb-4 space-y-2 shadow-md">
-          <ul className="space-y-2 text-sm text-gray-800">
-            <li className="hover:text-cyan-500 cursor-pointer">Home</li>
-            <li className="hover:text-cyan-500 cursor-pointer">Services</li>
-            <li className="hover:text-cyan-500 cursor-pointer">Team</li>
-            <li className="hover:text-cyan-500 cursor-pointer">Packages</li>
+        <div className="md:hidden flex flex-col items-center justify-center bg-white px-4 pb-4 space-y-2 shadow-md">
+          <ul className="space-y-2 flex flex-col items-center justify-center uppercase font-sans text-gray-800 text-center font-extrabold text-2xl">
+            <Link
+              to="/"
+              className="hover:text-cyan-500 cursor-pointer"
+              onClick={closeMobileMenu}
+            >
+              Home
+            </Link>
+            <Link
+              to="/Services"
+              className="hover:text-cyan-500 cursor-pointer"
+              onClick={closeMobileMenu}
+            >
+              Services
+            </Link>
+            <Link
+              to="/Team"
+              className="hover:text-cyan-500 cursor-pointer"
+              onClick={closeMobileMenu}
+            >
+              Team
+            </Link>
+            <Link
+              to="/Pricing"
+              className="hover:text-cyan-500 cursor-pointer"
+              onClick={closeMobileMenu}
+            >
+              Packages
+            </Link>
           </ul>
-          <button className="mt-2 w-full bg-cyan-400 hover:bg-cyan-500 text-white text-sm px-4 py-2 rounded">
-            Contact Us
-          </button>
+
+          <Link to="/ContactUs" onClick={closeMobileMenu}>
+            <button className="mt-2 w-full bg-[#00ead4] text-xl hover:bg-cyan-500 text-black  px-8 py-2 rounded">
+              Book Free Call
+            </button>
+          </Link>
         </div>
       )}
     </nav>
