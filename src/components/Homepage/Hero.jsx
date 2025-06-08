@@ -1,5 +1,6 @@
 import React from "react";
 import Woman from "../../assets/Woman.png";
+import { Link } from "react-router-dom";
 
 const HeroSection = () => {
   return (
@@ -16,12 +17,16 @@ const HeroSection = () => {
           </p>
 
           <div className="mt-6 flex flex-col sm:flex-row justify-center md:justify-start gap-4">
-            <button className="bg-cyan-400 hover:bg-cyan-500 text-black px-5 py-2 rounded-md font-medium text-sm">
-              Book Free Call
-            </button>
-            <button className="bg-[#EDEDED] border border-gray-300 hover:border-gray-500 text-black px-5 py-2 rounded-md font-medium text-sm">
-              Discover Our Services
-            </button>
+            <Link to="/ContactUs">
+              <button className="bg-cyan-400 hover:bg-cyan-500 text-black px-5 py-2 rounded-md font-medium text-sm">
+                Book Free Call
+              </button>
+            </Link>
+            <Link to="/Services">
+              <button className="bg-[#EDEDED] border border-gray-300 hover:border-gray-500 text-black px-5 py-2 rounded-md font-medium text-sm">
+                Discover Our Services
+              </button>
+            </Link>
           </div>
         </div>
 

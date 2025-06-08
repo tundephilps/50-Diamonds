@@ -11,25 +11,25 @@ export default function FAQPage() {
       question:
         "How long does it take to launch my business with your Starter package?",
       answer:
-        "The Starter package typically takes 2-3 weeks to complete. This includes business name ideation, logo design with 2 options, CAC company registration (which can take 5-7 business days), and scheduling your 1-hour strategy call. We'll keep you updated throughout the entire process.",
+        "Most clients are fully registered and ready to operate within 7-10 working days, depending on CAC approval speed",
     },
     {
       id: 2,
       question: "Can I pay in installments?",
       answer:
-        "Yes, we offer flexible payment plans for all our packages. You can split payments into 2-3 installments depending on the package you choose. A 50% deposit is required to begin work, with the remaining balance due upon completion. Contact us to discuss a payment schedule that works for your budget.",
+        "Yes, Our Growth and Elite packages allow flexible payment plans. Speak with us to arrange a custome schedule.",
     },
     {
       id: 3,
       question: "What if I don't have a business name yet?",
       answer:
-        "No worries at all! Our Starter package includes business name ideation as the first step. We'll work with you to brainstorm and develop several name options that align with your vision, industry, and target market. We'll also check name availability for CAC registration and domain registration.",
+        "No problem! We help you brainstorm and validate strong, avaliable names as part of our services.",
     },
     {
       id: 4,
       question: "What does the HR & Hiring Setup include?",
       answer:
-        "Our HR & Hiring Setup (included in Growth and Elite packages) provides you with essential templates including employment contracts, job descriptions, staff handbook, organizational structure recommendations, hiring checklists, and basic HR policies. We'll also provide guidance on Nigerian labor laws and best practices for small businesses.",
+        "Job Description, hiring templates, onboarding guides and advice on growing a lean but productive team.",
     },
     {
       id: 5,

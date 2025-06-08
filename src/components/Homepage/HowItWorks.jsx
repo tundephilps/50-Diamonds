@@ -6,7 +6,7 @@ import Card3 from "../../assets/Card3.png";
 const HowItWorks = () => {
   return (
     <section className="py-16 bg-white text-center">
-      <div className="max-w-6xl mx-auto px-4">
+      <div className="lg:px-12 mx-auto px-4">
         <p className="text-sm uppercase text-gray-500">How It Works</p>
         <h2 className="text-3xl font-bold mt-2 mb-10">Our Process</h2>
 

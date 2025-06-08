@@ -1,5 +1,6 @@
 import React from "react";
 import { FaCheck } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 export default function Pricing() {
   const packages = [
@@ -92,11 +93,13 @@ export default function Pricing() {
               </div>
 
               {/* CTA Button */}
-              <button
-                className={`w-full py-3 px-6 text-[#00ead4] rounded-lg font-medium transition-colors duration-200 ${pkg.buttonClass}`}
-              >
-                {pkg.buttonText}
-              </button>
+              <Link to="/SelectedPackage">
+                <button
+                  className={`w-full py-3 px-6 text-[#00ead4] rounded-lg font-medium transition-colors duration-200 ${pkg.buttonClass}`}
+                >
+                  {pkg.buttonText}
+                </button>
+              </Link>
             </div>
           ))}
         </div>

@@ -15,11 +15,12 @@ import Soc1 from "../../assets/Soc1.png";
 import Soc2 from "../../assets/Soc2.png";
 import Soc3 from "../../assets/Soc3.png";
 import Logo from "../../assets/Logo.png";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
     <footer className="bg-white border-t py-10">
-      <div className="max-w-6xl mx-auto px-4 grid md:grid-cols-4 gap-10 text-sm text-gray-700">
+      <div className="lg:px-12 px-4 mx-auto  grid md:grid-cols-4 gap-10 text-sm text-gray-700">
         {/* Logo & Socials */}
         <div>
           <img src={Logo} className="mb-6" />
@@ -44,29 +45,29 @@ const Footer = () => {
           <h4 className="font-semibold mb-3">Quick Links</h4>
           <ul className="space-y-2">
             <li>
-              <a href="#" className="hover:underline">
+              <Link to="/" className="hover:underline">
                 Home
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="#" className="hover:underline">
+              <Link to="/Services" className="hover:underline">
                 Services
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="#" className="hover:underline">
+              <Link to="/#" className="hover:underline">
                 Video Stories
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="#" className="hover:underline">
+              <Link to="/Team" className="hover:underline">
                 Our Team
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="#" className="hover:underline">
+              <Link to="/Pricing" className="hover:underline">
                 Packages
-              </a>
+              </Link>
             </li>
           </ul>
         </div>
@@ -76,24 +77,24 @@ const Footer = () => {
           <h4 className="font-semibold mb-3">About Us</h4>
           <ul className="space-y-2">
             <li>
-              <a href="#" className="hover:underline">
+              <Link to="/FAQ" className="hover:underline">
                 FAQ
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="#" className="hover:underline">
+              <Link to="/ContactUs" className="hover:underline">
                 Contact Us
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="#" className="hover:underline">
+              <Link to="/Terms" className="hover:underline">
                 Terms of use
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="#" className="hover:underline">
+              <Link to="/Privacy" className="hover:underline">
                 Privacy Policy
-              </a>
+              </Link>
             </li>
           </ul>
         </div>
