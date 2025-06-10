@@ -7,7 +7,12 @@ const HeroSection = () => {
     <section className="bg-white  py-40 lg:py-40">
       <div className="  grid md:grid-row-2 gap-10 items-center">
         {/* Text Content */}
-        <div className="lg:px-12 px-4 text-center md:text-left">
+        <div
+          className="lg:px-12 px-4 text-center md:text-left"
+          data-aos="fade-right"
+          data-aos-offset="300"
+          data-aos-easing="ease-in-sine"
+        >
           <h1 className="text-3xl md:text-5xl font-bold text-gray-900 leading-tight">
             Turn Your Business Dreams into Reality
           </h1>

@@ -56,7 +56,11 @@ export default function ServicesHighlight() {
         </button>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 mt-8">
+      <div
+        className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 mt-8"
+        data-aos="fade-down"
+        data-aos-duration="3000"
+      >
         {services.map((service, index) => (
           <div key={index} className={`p-6 rounded-lg ${service.bg}`}>
             <div

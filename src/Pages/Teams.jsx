@@ -20,8 +20,8 @@ export default function Teams() {
       image: Team2,
     },
     {
-      name: "Dami A.",
-      role: "Business Strategist",
+      name: "Chisom Nwabugwu",
+      role: "Brand Identity",
       image: Team3,
     },
     {
@@ -51,7 +51,11 @@ export default function Teams() {
           {teamMembers.map((member, index) => (
             <div key={index} className=" group">
               {/* Profile Image */}
-              <div className="relative mb-6 overflow-hidden rounded-lg">
+              <div
+                className="relative mb-6 overflow-hidden rounded-lg"
+                data-aos="fade-down"
+                data-aos-duration="3000"
+              >
                 <img
                   src={member.image}
                   alt={member.name}
