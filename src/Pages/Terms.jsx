@@ -1,14 +1,4 @@
 import React from "react";
-import {
-  FaCheckCircle,
-  FaCog,
-  FaCreditCard,
-  FaUser,
-  FaClock,
-  FaBrain,
-  FaShieldAlt,
-  FaEdit,
-} from "react-icons/fa";
 import Term1 from "../assets/Term1.png";
 
 import Term2 from "../assets/Term2.png";
