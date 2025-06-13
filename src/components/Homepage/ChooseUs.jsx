@@ -21,19 +21,19 @@ export default function ChooseUs() {
       </div>
 
       <div className="mt-10 bg-black text-white rounded-xl px-6 lg:px-32 py-8 grid grid-cols-1 md:grid-cols-3 gap-6 text-center">
-        <div className="flex flex-col text-start">
+        <div className="flex flex-col text-start lg:border-b-0 border-b lg:pb-0 pb-8 border-gray-700">
           <FaLock className="text-4xl mb-2" />
           <p className="font-semibold text-4xl">
             Trusted by 100+ early-stage founders
           </p>
         </div>
-        <div className="flex flex-col  text-start border-t-0 md:border-t-0 lg:border-l  md:border-r border-gray-700 lg:px-4 px-0">
+        <div className="flex flex-col  text-start  lg:border-b-0 border-b lg:pb-0 pb-8 border-t-0 md:border-t-0 lg:border-l  md:border-r border-gray-700 lg:px-4 px-0">
           <FaBrain className="text-4xl mb-2 text-pink-400" />
           <p className="font-semibold text-4xl">
             12+ years of business launch experience
           </p>
         </div>
-        <div className="flex flex-col text-start">
+        <div className="flex flex-col text-start  lg:border-b-0 border-b lg:pb-0 pb-8 border-gray-700">
           <FaTrophy className="text-4xl mb-2 text-yellow-400" />
           <p className="font-semibold text-4xl">
             90% of clients start earning within 4-6 weeks

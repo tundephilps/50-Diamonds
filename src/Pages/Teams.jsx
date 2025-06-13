@@ -5,7 +5,7 @@ import Team1 from "../assets/Team1.png";
 
 import Team2 from "../assets/Team2.jpg";
 import Team3 from "../assets/Team3.png";
-import Team4 from "../assets/Team4.png";
+import Team4 from "../assets/Team4.jpg";
 
 export default function Teams() {
   const teamMembers = [
@@ -25,8 +25,8 @@ export default function Teams() {
       image: Team3,
     },
     {
-      name: "Osaron Omoregbe",
-      role: "Digital Specialist",
+      name: "Oluwasegun Adenekan",
+      role: "Business Analyst",
       image: Team4,
     },
   ];
